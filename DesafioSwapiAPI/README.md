@@ -1,13 +1,13 @@
 # Desafio SWAPI
 
-Projeto de AutomaÁ„o de Testes da API do Star Wars.
-CriaÁ„o de 4 Cen·rios positivos e 1 negativo.
+Projeto de Automa√ß√£o de Testes da API do Star Wars.
+Cria√ß√£o de 3 Cen√°rios positivos e 1 negativo.
 
 Tecnologias Utilizadas:
 - Cucumber
 - RestAssured
 - Maven Repository
-- Linguagem de ProgramaÁ„o Java
+- Linguagem de Programa√ß√£o Java
 
 
-##### Link para o RelatÛrio: https://reports.cucumber.io/reports/a78ab8fc-dfb2-4071-aa19-7d2c4e68419e
+##### Link para o Relat√≥rio: https://reports.cucumber.io/reports/a78ab8fc-dfb2-4071-aa19-7d2c4e68419e
