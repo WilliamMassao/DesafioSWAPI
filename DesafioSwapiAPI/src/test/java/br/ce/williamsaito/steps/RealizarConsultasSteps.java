@@ -62,4 +62,13 @@ public class RealizarConsultasSteps {
 		responseGetSwapi.then().statusCode(200);
 		Assert.assertEquals(starWarsAPI.getSwapiResponseCountQuntidade(responseGetSwapi)[1], starWarsAPI.getSwapiResponseCountQuntidade(responseGetSwapi)[0]);
 	}
+	
+	@Quando("realizo a requisicao GET da pessoa {int} inexistente")
+	public void realizoRequisicaoGetPessoaInexistente(int numeroPessoa) {
+	    responseGetSwapi = starWarsAPI.getSwapiRequest("/people/", numeroPessoa);
+	}
+	@Entao("valido o Status Code {int} de requisicao nao encontrada")
+	public void validoRequisicaoNaoEncontrada(int statusCode) {
+		responseGetSwapi.then().statusCode(statusCode);
+	}
 }

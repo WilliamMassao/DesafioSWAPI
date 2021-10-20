@@ -1,6 +1,6 @@
 #language: pt
 @funcionais
-Funcionalidade: Consulta de filmes
+Funcionalidade: Consulta na SWAPI
 
 	Como um usuario 
 	Gostaria de realizar requisicoes
@@ -28,8 +28,19 @@ Exemplos:
    | 2            | "C-3PO"					 | 75         |
    | 10           | "Obi-Wan Kenobi" | 77         |
    
-Esquema do Cenario: Validar a quantidade de filmes na response ao enviar requisicao para o endpoint films
+Cenario: Validar a quantidade de filmes na response ao enviar requisicao para o endpoint films
 	Dado que possuo acesso ao endpoint films
 	Quando realizo a requisicao GET dos filmes 
 	Entao valido o count de acordo com a quantidade de filmes listados
+	
+Esquema do Cenario: Validar a response negativa ao consultar uma pessoa inexistente
+	Dado que possuo acesso ao endpoint people
+	Quando realizo a requisicao GET da pessoa <numeroPessoa> inexistente
+	Entao valido o Status Code <statusCode> de requisicao nao encontrada
+	
+	Exemplos:
+   | numeroPessoa | statusCode |
+   | 100          | 404        |
+   | 98           | 404        |
+   
 		
