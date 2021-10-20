@@ -13,6 +13,7 @@ public class BaseTest implements ConfigurationParameters{
 	
 	@Before
 	public static void setup() {
+		
 		RestAssured.baseURI = baseUrl;
 		RestAssured.basePath = basePath;
 		RestAssured.port = 443;

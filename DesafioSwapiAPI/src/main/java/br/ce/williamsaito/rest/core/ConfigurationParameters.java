@@ -7,7 +7,7 @@ public interface ConfigurationParameters {
 	String baseUrl = "https://swapi.dev";
 	
 	String basePath = "/api";
-	
+		
 	ContentType contentType = ContentType.JSON;
 	
 	Long maxTimeout = 10000L;

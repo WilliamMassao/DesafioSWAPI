@@ -9,9 +9,10 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/resources/features/cenarios.feature",
 		glue = "br.ce.williamsaito.steps",
-		plugin = {"pretty", "json:target/report.json"},
+		plugin = {"pretty", "json:target/report.json", "json:target/report.xml"},
 		monochrome = true,
-		dryRun = false
+		dryRun = false,
+		publish = true
 		)
 
 public class RunnerAPI {
